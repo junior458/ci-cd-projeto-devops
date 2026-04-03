@@ -1,2 +1,2 @@
-# ci-cd-projeto-devops
-Disciplina DevOps
+Projeto CI/CD para disciplina DevOps 
+
