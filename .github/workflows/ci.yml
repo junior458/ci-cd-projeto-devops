@@ -1,14 +1,24 @@
-name: CI
+name: Continuous Integration
 
 on:
   push:
-    branches: [ main, desenvolvimento ]
+    branches:
+      - main
+      - desenvolvimento
+  pull_request:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Verificar arquivos
+        run: ls -la
+
       - name: Teste simples
-        run: echo "Pipeline funcionando"
+        run: echo "CI funcionando com sucesso"
