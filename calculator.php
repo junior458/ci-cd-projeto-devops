@@ -15,3 +15,4 @@ function multiplicacao($a, $b) {
 function divisao($a, $b) {
     return $a / $b;
 }
+// PR final testes
