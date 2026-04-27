@@ -19,5 +19,8 @@ jobs:
       - name: Instalar dependências
         run: composer install
 
+      - name: Dar permissão ao PHPUnit
+        run: chmod +x vendor/bin/phpunit
+
       - name: Rodar testes
         run: vendor/bin/phpunit tests
